@@ -1,0 +1,45 @@
+<div class="dash-container">
+  <div class="row">
+    <div class="col-auto">
+      <h2 class="dash-name">{{ data.user.name }}'s Dashboard</h2>
+    </div>
+  </div>
+  <div class="col-auto">
+    <form class="dash-form">
+    <label class="dash-label" for="eventTitle">Title: </label>
+    <input class="dash-input" type="text" id="eventTitle" name="eventTitle" placeholder="Title">
+    <label class="dash-label" for="eventDescription">Description: </label>
+    <input class="dash-input" type="text" id="eventDescription" name="eventDescription" placeholder="Describe your event">
+    <label class="dash-label" for="eventDate">Date: </label>
+    <input class="dash-input" type="text" id="eventDate" name="eventDate" placeholder="1/1/2000">
+    <label class="dash-label" for="eventCity">City: </label>
+    <input class="dash-input" type="text" id="eventCity" name="eventCity" placeholder="Atlanta">
+    <label class="dash-label" for="eventState">State: </label>
+    <input class="dash-input" type="text" id="eventState" name="eventState" placeholder="Georgia">
+    <label class="dash-label" for="eventFee">Fee Amount: </label>
+    <input class="dash-input" type="text" name="eventFee" id="eventFee" placeholder="50">
+    <button class="btn btn-primary" id="dash-btn"><a class="create-class" id ="eventSubmit">Create New Event</a></button>
+    </form>
+  </div>
+</div>
+
+{{#if data.user.events.length}}
+<div class="dash-cont">
+  <h3 class="created-events">Created Events:</h3>
+  <div class="row">
+    {{#each data.user.events as |event| }}
+    <div class="col">
+      <div class="dash-cards" id="event-post">
+        <div class="card-body">
+          <h5 class="card-title">{{event.title}}</h5>
+          <p class="card-description"><b>Description:</b> {{event.event_description}}</p>
+          <p class="card-date"><b>Created on:</b> {{ event.event_date}}</p>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+{{/if}}
+<p id="userId">{{data.user.id}}</p>
+<script src="/js/dashboard.js"></script>

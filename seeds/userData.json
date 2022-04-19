@@ -1,0 +1,52 @@
+[
+    {
+      "name": "LadyUx",
+      "email": "ladyux@hotmail.com",
+      "password": "password12345"
+    },
+    {
+      "name": "SirTechie",
+      "email": "sirtechie@gmail.com",
+      "password": "password12345"
+    },
+    {
+      "name": "JavaMan",
+      "email": "javaman@aol.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Techster21",
+      "email": "techster21@gmail.com",
+      "password": "password12345"
+    },
+    {
+      "name": "JsCoder",
+      "email": "coderj@aol.com",
+      "password": "password12345"
+    },
+    {
+      "name": "GTStudent",
+      "email": "GTStudent@yahoo.com",
+      "password": "password12345"
+    },
+    {
+      "name": "IoTLife",
+      "email": "IoT@gmail.com",
+      "password": "password12345"
+    },
+    {
+      "name": "FlokiGold",
+      "email": "floki@yahoo.com",
+      "password": "password12345"
+    },
+    {
+      "name": "MetaBit",
+      "email": "metabit@aol.com",
+      "password": "password12345"
+    },
+    {
+      "name": "shaqrivera",
+      "email": "shaq.rivera@gmail.com",
+      "password": "password12345"
+    }
+  ]
