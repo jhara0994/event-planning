@@ -1,3 +1,4 @@
+
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
@@ -7,11 +8,11 @@ if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
   sequelize = new Sequelize(
-    process.env.DB_NAME,
-    process.env.DB_USER,
-    process.env.DB_PASSWORD,
+    'heroku_05f3259ad5fe8bd',
+    'b5fd6f4dc3f2d0',
+    'c4d11b45',
     {
-      host: 'localhost',
+      host: 'us-cdbr-east-05.cleardb.net',
       dialect: 'mysql',
       port: 3306
     }
