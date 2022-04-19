@@ -22,10 +22,11 @@ nav {
 
 a {
     padding: 5px;
+    font-weight: 700;
 }
 
 a:hover {
-    color: white;
+    color: darkorange;
 }
 
 body {
@@ -135,9 +136,11 @@ ul {
 
 
 .column {
-    float: left;
-    width: 25%;
     padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
 .cards {
@@ -145,16 +148,14 @@ ul {
     transition: 0.3s;
     border-radius: 5px;
     background-color: lightblue;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
     margin-top: 10px;
 }
 
 .cards-container {
     padding: 2px 16px;
     margin-top: 10px;
+    width: 200px;
+    height: 45px;
 }
 
 .card {

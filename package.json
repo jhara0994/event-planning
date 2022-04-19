@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seeds/index.js"
+},
   "dependencies": {
     "axios": "0.26.0",
     "bcrypt": "^5.0.1",
